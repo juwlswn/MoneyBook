@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAED7D">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="사용내역"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        android:text="금액 | 사용내역 | 사용날짜 | 상태"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/listview"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:onClick="backClicked"
+        android:text="BACK"/>
+</LinearLayout>
